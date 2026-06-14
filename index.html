@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope_0hana — Mon setup streaming</title>
+  <meta name="description" content="Présentation naturelle et douce du setup streaming de Hope_0hana, rédigée à la première personne.">
+  <meta property="og:title" content="Hope_0hana — Mon setup streaming">
+  <meta property="og:description" content="Je présente simplement mon setup, mon univers et ce qui m’aide à jouer dans de bonnes conditions.">
+  <meta property="og:image" content="https://static-cdn.jtvnw.net/jtv_user_pictures/4f1d41b6-2b86-4c86-b341-a265743db2a1-profile_banner-480.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Art direction: présentation personnelle claire et professionnelle.
+       Palette: crème, ivoire et beige doux, avec un accent rosé discret.
+       Typography: Fraunces pour les titres, Inter pour la lisibilité UI.
+       Density: aérée, structurée, éditoriale. */
+
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.1rem);
+      --text-2xl: clamp(2.1rem, 1.3rem + 2.7vw, 3.8rem);
+      --text-hero: clamp(2.8rem, 1rem + 5vw, 5.4rem);
+
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+
+      --color-bg: #f8f3ea;
+      --color-surface: #fffaf3;
+      --color-surface-2: #fffdf9;
+      --color-surface-offset: #f3ece2;
+      --color-surface-offset-2: #eadfce;
+      --color-divider: #dfd1c2;
+      --color-border: #d8cabb;
+      --color-text: #312724;
+      --color-text-muted: #6f625d;
+      --color-text-faint: #a1918a;
+      --color-text-inverse: #fffdfb;
+      --color-primary: #a5485a;
+      --color-primary-hover: #8d3b4c;
+      --color-primary-active: #6f2d39;
+      --color-primary-highlight: #f4e5e6;
+      --color-blue: #647b94;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.75rem;
+      --radius-lg: 1rem;
+      --radius-xl: 1.5rem;
+      --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px oklch(0.2 0.01 40 / 0.05);
+      --shadow-md: 0 10px 24px oklch(0.2 0.01 40 / 0.08);
+      --shadow-lg: 0 20px 48px oklch(0.2 0.01 40 / 0.12);
+      --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      --content-default: 1140px;
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body: 'Inter', 'Helvetica Neue', sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --color-bg: #171413;
+      --color-surface: #211d1c;
+      --color-surface-2: #262120;
+      --color-surface-offset: #2b2524;
+      --color-surface-offset-2: #342d2c;
+      --color-divider: #3a3231;
+      --color-border: #4e4341;
+      --color-text: #f3ece7;
+      --color-text-muted: #c6b7af;
+      --color-text-faint: #9d8c85;
+      --color-text-inverse: #201b1a;
+      --color-primary: #de8394;
+      --color-primary-hover: #e9a1ad;
+      --color-primary-active: #f1c0c8;
+      --color-primary-highlight: #443136;
+      --color-blue: #92a9c0;
+      --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.22);
+      --shadow-md: 0 10px 24px oklch(0 0 0 / 0.28);
+      --shadow-lg: 0 20px 48px oklch(0 0 0 / 0.38);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html {
+      -moz-text-size-adjust: none;
+      -webkit-text-size-adjust: none;
+      text-size-adjust: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--space-16);
+    }
+    body {
+      min-height: 100dvh;
+      line-height: 1.65;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--color-text);
+      background: var(--color-bg);
+    }
+    img, picture, video, canvas, svg { display: block; max-width: 100%; height: auto; }
+    input, button, textarea, select, a { font: inherit; color: inherit; }
+    h1, h2, h3 { font-family: var(--font-display); line-height: 1.08; text-wrap: balance; }
+    p, li { text-wrap: pretty; max-width: 72ch; }
+    a, button {
+      transition: color var(--transition-interactive), background var(--transition-interactive), border-color var(--transition-interactive), transform var(--transition-interactive), box-shadow var(--transition-interactive);
+    }
+    a { text-decoration: none; }
+    button { cursor: pointer; border: none; background: none; }
+    :focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+      border-radius: var(--radius-sm);
+    }
+    .skip-link {
+      position: absolute;
+      left: var(--space-4);
+      top: -3rem;
+      padding: var(--space-3) var(--space-4);
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+      border-radius: var(--radius-full);
+      z-index: 100;
+    }
+    .skip-link:focus { top: var(--space-4); }
+
+    .container {
+      width: min(calc(100% - 2rem), var(--content-default));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(16px);
+      background: color-mix(in oklab, var(--color-bg) 88%, transparent);
+      border-bottom: 1px solid color-mix(in oklab, var(--color-text) 10%, transparent);
+    }
+    .header-inner {
+      min-height: 4.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-3);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .brand-mark {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: color-mix(in oklab, var(--color-primary) 12%, white);
+      border: 1px solid color-mix(in oklab, var(--color-primary) 18%, transparent);
+      color: var(--color-primary-active);
+    }
+    .brand svg { width: 1.2rem; height: 1.2rem; }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+    .nav-link,
+    .theme-toggle {
+      min-width: 44px;
+      min-height: 44px;
+      padding: 0 var(--space-4);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-full);
+      border: 1px solid color-mix(in oklab, var(--color-text) 10%, transparent);
+      background: var(--color-surface);
+      box-shadow: var(--shadow-sm);
+    }
+
+    main { overflow: clip; }
+    section { padding-block: clamp(var(--space-12), 7vw, var(--space-24)); }
+
+    .hero {
+      padding-top: clamp(var(--space-10), 7vw, var(--space-20));
+    }
+    .hero-grid,
+    .intro-grid,
+    .setup-grid,
+    .gear-grid,
+    .pets-grid,
+    .games-grid,
+    .footer-grid {
+      display: grid;
+      gap: var(--space-6);
+    }
+    .hero-card,
+    .panel,
+    .spec-card,
+    .gear-card,
+    .pet-card,
+    .game-card,
+    .footer-card {
+      background: var(--color-surface);
+      border: 1px solid color-mix(in oklab, var(--color-text) 8%, transparent);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+    }
+    .hero-card,
+    .panel,
+    .spec-card,
+    .gear-card,
+    .footer-card {
+      padding: clamp(var(--space-6), 4vw, var(--space-10));
+    }
+    .hero-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: var(--space-5);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      padding: 0.55rem 0.95rem;
+      border-radius: var(--radius-full);
+      background: var(--color-primary-highlight);
+      color: var(--color-primary-active);
+      font-size: var(--text-xs);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero h1 { font-size: var(--text-hero); max-width: 12ch; }
+    .hero-lead { color: var(--color-text-muted); }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-top: var(--space-2);
+    }
+    .button-primary,
+    .button-secondary {
+      min-height: 44px;
+      padding: 0.85rem 1.2rem;
+      border-radius: var(--radius-full);
+      font-size: var(--text-sm);
+      font-weight: 700;
+    }
+    .button-primary {
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+      box-shadow: var(--shadow-sm);
+    }
+    .button-primary:hover { background: var(--color-primary-hover); }
+    .button-secondary {
+      background: var(--color-surface-2);
+      border: 1px solid color-mix(in oklab, var(--color-text) 10%, transparent);
+    }
+    .hero-banner {
+      overflow: hidden;
+      display: grid;
+      min-height: 100%;
+    }
+    .hero-banner img {
+      width: 100%;
+      height: 100%;
+      min-height: 22rem;
+      object-fit: contain;
+    }
+
+
+    .hero-banner-wide {
+      position: relative;
+      width: 100%;
+      margin-top: var(--space-6);
+      overflow: hidden;
+      border-top: 1px solid color-mix(in oklab, var(--color-text) 7%, transparent);
+      border-bottom: 1px solid color-mix(in oklab, var(--color-text) 7%, transparent);
+      background: var(--color-surface-offset);
+    }
+    .hero-banner-wide img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+    }
+    .pet-card {
+      background: var(--color-surface);
+      border: 1px solid color-mix(in oklab, var(--color-text) 8%, transparent);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+      padding: clamp(var(--space-6), 4vw, var(--space-8));
+    }
+    .pet-card p,
+    .game-card p { color: var(--color-text-muted); }
+
+    .game-card {
+      background: var(--color-surface);
+      border: 1px solid color-mix(in oklab, var(--color-text) 8%, transparent);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+      padding: clamp(var(--space-6), 4vw, var(--space-8));
+    }
+
+    .section-head {
+      display: grid;
+      gap: var(--space-3);
+      margin-bottom: var(--space-8);
+      max-width: 50rem;
+    }
+    .section-head h2 { font-size: var(--text-2xl); }
+    .section-head p { color: var(--color-text-muted); }
+
+    .panel h3,
+    .spec-card h3,
+    .gear-card h3,
+    .pet-card h3,
+    .game-card h3,
+    .footer-card h3 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-4);
+    }
+    .panel p + p,
+    .footer-card p + p { margin-top: var(--space-3); }
+
+    .key-points {
+      display: grid;
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+    }
+    .key-point {
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--color-divider);
+    }
+    .key-point:first-child { padding-top: 0; border-top: 0; }
+    .key-point h4 {
+      font-size: var(--text-base);
+      margin-bottom: var(--space-1);
+    }
+    .key-point p { color: var(--color-text-muted); font-size: var(--text-sm); }
+
+    .spec-list,
+    .gear-list {
+      display: grid;
+      gap: var(--space-3);
+    }
+    .spec-row,
+    .gear-row {
+      display: grid;
+      gap: var(--space-2);
+      padding: var(--space-4);
+      border-radius: calc(var(--radius-lg) - var(--space-1));
+      background: var(--color-surface-2);
+      border: 1px solid color-mix(in oklab, var(--color-text) 7%, transparent);
+    }
+    .spec-row small,
+    .gear-row small {
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-faint);
+      font-weight: 800;
+    }
+    .spec-row strong,
+    .gear-row strong {
+      font-size: var(--text-base);
+      line-height: 1.45;
+    }
+    .spec-row p,
+    .gear-row p {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+    }
+
+    .highlight-box {
+      margin-top: var(--space-6);
+      padding: var(--space-5);
+      border-radius: var(--radius-lg);
+      background: color-mix(in oklab, var(--color-primary) 7%, var(--color-surface));
+      border: 1px solid color-mix(in oklab, var(--color-primary) 18%, transparent);
+      color: var(--color-text-muted);
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-top: var(--space-5);
+    }
+    .pill-row span {
+      padding: 0.65rem 0.95rem;
+      border-radius: var(--radius-full);
+      background: var(--color-surface-2);
+      border: 1px solid color-mix(in oklab, var(--color-text) 8%, transparent);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--color-text-muted);
+    }
+
+    .signature {
+      padding-bottom: var(--space-12);
+      text-align: center;
+      color: var(--color-text-faint);
+      font-size: var(--text-xs);
+    }
+
+    @media (min-width: 820px) {
+      .hero-grid,
+      .intro-grid,
+      .footer-grid { grid-template-columns: 1.05fr 0.95fr; }
+      .setup-grid,
+      .gear-grid,
+      .pets-grid,
+      .games-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (min-width: 1120px) {
+      .setup-grid,
+      .pets-grid,
+      .games-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 767px) {
+      .nav-link { display: none; }
+      .hero h1 { max-width: 10ch; }
+      .hero-banner img { min-height: 16rem; }
+    }
+
+    @media (hover: hover) {
+      .hero-card:hover,
+      .hero-banner:hover,
+      .panel:hover,
+      .spec-card:hover,
+      .gear-card:hover,
+      .footer-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" aria-label="Logo Hope_0hana">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 6v12"></path>
+            <path d="M17 6v12"></path>
+            <path d="M7 12h10"></path>
+            <path d="M9.5 8.5c.7-1.2 1.6-1.8 2.5-1.8s1.8.6 2.5 1.8"></path>
+            <path d="M9.5 15.5c.7 1.2 1.6 1.8 2.5 1.8s1.8-.6 2.5-1.8"></path>
+          </svg>
+        </div>
+        <span>Hope_0hana</span>
+      </div>
+      <div class="header-actions">
+        <a class="nav-link" href="#setup">Mon setup</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Basculer le thème">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <div class="container hero-grid">
+        <article class="hero-card">
+          <span class="eyebrow">Présentation</span>
+          <h1>Bonjour, moi c’est Hope_0hana.</h1>
+          <p class="hero-lead">Je streame avec quelque chose de très simple en tête : avoir un espace agréable, doux et facile à suivre, tout en restant moi-même. J’aime quand tout tourne bien, quand je peux jouer tranquillement, et quand il reste aussi un peu de spontanéité.</p>
+          <p class="hero-lead">J’utilise un setup double PC, surtout parce que cela m’aide à mieux jouer et à garder un stream plus confortable au quotidien.</p>
+          <div class="hero-actions">
+            <a class="button-primary" href="#setup">Découvrir mon setup</a>
+            <a class="button-secondary" href="#ambiance">Ma manière de streamer</a>
+          </div>
+        </article>
+
+        <article class="panel">
+          <span class="eyebrow">Mon univers</span>
+          <h3>Chez moi, le stream ne va pas sans mes compagnons.</h3>
+          <p>La bannière de la chaîne leur laisse déjà une vraie place, et c’est normal : Stitch, Tagada et Viking font partie du décor, des habitudes et de l’ambiance générale.</p>
+          <p>Ils apportent chacun quelque chose de très différent, mais ensemble ils résument bien mon univers : un peu de calme, un peu de chaos, et beaucoup d’affection.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="hero-banner-wide" aria-label="Bannière Twitch Hope_0hana">
+      <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/4f1d41b6-2b86-4c86-b341-a265743db2a1-profile_banner-480.png" alt="Bannière Twitch de Hope_0hana avec ses animaux" width="1920" height="480" loading="eager" decoding="async">
+    </section>
+
+    <section id="ambiance">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Ma façon de streamer</span>
+          <h2>Je veux surtout que tout paraisse simple et naturel.</h2>
+          <p>J’aime que mon espace de stream soit doux, clair et agréable à regarder. Je préfère une ambiance simple, chaleureuse et sincère, plutôt qu’un rendu trop démonstratif.</p>
+        </div>
+
+        <div class="intro-grid">
+          <article class="panel">
+            <h3>Ce qui me représente le mieux</h3>
+            <div class="key-points">
+              <div class="key-point">
+                <h4>Un cadre agréable</h4>
+                <p>J’aime quand tout est en place pour que je puisse me concentrer sur le jeu, la discussion et l’ambiance.</p>
+              </div>
+              <div class="key-point">
+                <h4>Quelque chose de simple</h4>
+                <p>Je vais à l’essentiel : un setup joli, clair et facile à vivre, sans chercher à en faire trop.</p>
+              </div>
+              <div class="key-point">
+                <h4>Une part de spontanéité</h4>
+                <p>Je peux être distraite et parfois gaffeuse, et j’assume complètement ce côté-là. C’est aussi ce qui rend mes streams plus vivants et plus humains.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <h3>En quelques mots</h3>
+            <p>Je présente ici mon espace comme je le vis au quotidien : un coin où je peux jouer, streamer et passer de bons moments.</p>
+            <p>Le but n’est pas de lister du matériel pour lister du matériel, mais de montrer un univers qui me ressemble et dans lequel je me sens bien.</p>
+            <div class="pill-row" aria-label="Mots-clés">
+              <span>Clair</span>
+              <span>Stable</span>
+              <span>Professionnel</span>
+              <span>Spontané</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="setup">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Setup double PC</span>
+          <h2>J’ai un setup double PC qui m’aide surtout à jouer plus confortablement.</h2>
+          <p>J’ai simplement une machine pour le stream et une autre pour le jeu. Pour moi, cela rend les sessions plus fluides et plus agréables.</p>
+        </div>
+
+        <div class="setup-grid">
+          <article class="spec-card">
+            <h3>PC Stream</h3>
+            <div class="spec-list">
+              <div class="spec-row">
+                <small>Système</small>
+                <strong>Windows 11 25H2</strong>
+              </div>
+              <div class="spec-row">
+                <small>Processeur</small>
+                <strong>AMD Ryzen 9 5900X</strong>
+              </div>
+              <div class="spec-row">
+                <small>Carte mère</small>
+                <strong>ASUS ROG STRIX X570-F GAMING</strong>
+              </div>
+              <div class="spec-row">
+                <small>Carte graphique</small>
+                <strong>Gainward RTX 3080</strong>
+              </div>
+              <div class="spec-row">
+                <small>Mémoire</small>
+                <strong>2 × 16 Go DDR4 3600 MT/s CL16</strong>
+              </div>
+              <div class="spec-row">
+                <small>Stockage</small>
+                <strong>SSD 1 To</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="spec-card">
+            <h3>PC Jeu</h3>
+            <div class="spec-list">
+              <div class="spec-row">
+                <small>Système</small>
+                <strong>Windows 11 23H2</strong>
+              </div>
+              <div class="spec-row">
+                <small>Processeur</small>
+                <strong>AMD Ryzen 7 7800X3D</strong>
+              </div>
+              <div class="spec-row">
+                <small>Carte mère</small>
+                <strong>ASUS TUF GAMING B650-PLUS</strong>
+              </div>
+              <div class="spec-row">
+                <small>Carte graphique</small>
+                <strong>MSI RTX 4080</strong>
+              </div>
+              <div class="spec-row">
+                <small>Mémoire</small>
+                <strong>2 × 16 Go DDR5 6000 MT/s CL30</strong>
+              </div>
+              <div class="spec-row">
+                <small>Stockage</small>
+                <strong>SSD 500 Go pour l’OS + SSD 1 To pour les jeux</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="spec-card">
+            <h3>Ce que ça m’apporte</h3>
+            <div class="spec-list">
+              <div class="spec-row">
+                <small>Jeu</small>
+                <strong>Je joue plus sereinement.</strong>
+                <p>Cela m’aide à profiter de mes jeux dans de bonnes conditions.</p>
+              </div>
+              <div class="spec-row">
+                <small>Diffusion</small>
+                <strong>Le stream reste plus tranquille.</strong>
+                <p>Je peux lancer mes lives avec un ensemble plus simple à vivre au quotidien.</p>
+              </div>
+              <div class="spec-row">
+                <small>Résultat</small>
+                <strong>Je suis plus à l’aise.</strong>
+                <p>Au final, je me sens plus confortable pour jouer, parler et profiter du moment.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="highlight-box">
+          Optimisation réalisée par <strong>OptiUnreal</strong>.
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="jeux">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mes jeux</span>
+          <h2>Il y a les jeux où je tryhard… et ceux où je viens juste passer un bon moment.</h2>
+          <p>Selon les jours, j’ai autant envie de jouer sérieusement que de me poser sur quelque chose de plus calme. C’est aussi ça qui définit bien mon univers.</p>
+        </div>
+
+        <div class="games-grid">
+          <article class="game-card">
+            <h3>Call of Duty: Warzone</h3>
+            <p>Le côté compétitif me plaît beaucoup, même si, bon… on va dire que j’essaie très fort.</p>
+          </article>
+
+          <article class="game-card">
+            <h3>Minecraft</h3>
+            <p>J’y retrouve quelque chose de plus libre, plus posé, avec toujours la possibilité de partir dans plein de directions.</p>
+          </article>
+
+          <article class="game-card">
+            <h3>Diablo 4</h3>
+            <p>J’aime son ambiance, le rythme du jeu et ce côté efficace quand j’ai envie de me plonger dans quelque chose d’un peu plus intense.</p>
+          </article>
+
+          <article class="game-card">
+            <h3>Hogwarts Legacy</h3>
+            <p>C’est le genre d’univers dans lequel j’aime prendre mon temps, explorer et profiter simplement de l’ambiance.</p>
+          </article>
+
+          <article class="game-card">
+            <h3>PowerWash Simulator</h3>
+            <p>Clairement le jeu parfait entre amis pour chill après une journée ou une semaine difficile, sans pression et juste pour souffler un peu.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="compagnons">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mes animaux</span>
+          <h2>Ils ont une grande place dans ma vie, et forcément aussi dans mon univers.</h2>
+          <p>Ils ne sont pas juste “autour” du stream. Ils font vraiment partie de mon quotidien, de mon humeur et de tout ce qui rend cet espace vivant.</p>
+        </div>
+
+        <div class="pets-grid">
+          <article class="pet-card">
+            <h3>Stitch</h3>
+            <p><strong>Stitch, l’empêcheur de tourner en rond.</strong></p>
+            <p>Il trouve toujours le bon moment pour s’imposer, interrompre un petit plan tranquille ou rappeler qu’avec lui, rien ne reste parfaitement linéaire bien longtemps.</p>
+          </article>
+
+          <article class="pet-card">
+            <h3>Tagada</h3>
+            <p><strong>Tagada, la princesse calme.</strong></p>
+            <p>Elle apporte ce côté posé, doux et presque élégant qui équilibre naturellement le reste. Sa présence ressemble beaucoup à l’ambiance chill que j’aime retrouver en stream.</p>
+          </article>
+
+          <article class="pet-card">
+            <h3>Viking</h3>
+            <p><strong>Viking, aussi gaffeur que moi.</strong></p>
+            <p>Il a ce talent très spécial pour rendre les choses plus vivantes, plus imprévues et parfois un peu plus désorganisées aussi. Forcément, sur ce point, on se comprend très bien.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Périphériques</span>
+          <h2>J’ai choisi des éléments qui me simplifient la vie.</h2>
+          <p>Tout ce qui m’entoure m’aide surtout à jouer, à me voir correctement et à garder une ambiance propre à l’écran.</p>
+        </div>
+
+        <div class="gear-grid">
+          <article class="gear-card">
+            <h3>Affichage et pilotage</h3>
+            <div class="gear-list">
+              <div class="gear-row">
+                <small>Écrans</small>
+                <strong>AOC 24G2W1G4, Acer XV253Q, ROG PG27AQN</strong>
+                <p>Le ROG PG27AQN est mon écran principal pour le jeu.</p>
+              </div>
+              <div class="gear-row">
+                <small>Mixage et commandes</small>
+                <strong>AverMedia Live Gamer AX310</strong>
+                <p>Il m’aide à garder certains réglages sous la main pendant le live.</p>
+              </div>
+              <div class="gear-row">
+                <small>Capture</small>
+                <strong>Elgato HD60s</strong>
+                <p>Elle fait le lien entre mes deux PC de façon simple.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="gear-card">
+            <h3>Image et ambiance</h3>
+            <div class="gear-list">
+              <div class="gear-row">
+                <small>Webcam</small>
+                <strong>Nexigo 1080p</strong>
+                <p>Je garde quelque chose de simple et naturel pour apparaître à l’écran.</p>
+              </div>
+              <div class="gear-row">
+                <small>Éclairage</small>
+                <strong>Elgato Key Light</strong>
+                <p>Elle m’aide à avoir une image douce et agréable pendant mes streams.</p>
+              </div>
+              <div class="gear-row">
+                <small>Approche globale</small>
+                <strong>Un setup pensé pour être fiable.</strong>
+                <p>Je préfère un ensemble doux et harmonieux plutôt qu’un setup trop chargé.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container footer-grid">
+        <article class="footer-card">
+          <span class="eyebrow">En résumé</span>
+          <h3>Ce que je veux transmettre</h3>
+          <p>J’aime que mon setup reflète ma manière de streamer : quelque chose de doux, simple et agréable.</p>
+          <p>Et même si je reste parfois distraite ou un peu gaffeuse, c’est aussi cette spontanéité qui fait partie de mon identité en live.</p>
+        </article>
+
+        <article class="footer-card">
+          <span class="eyebrow">Positionnement</span>
+          <h3>Un environnement de stream clair et personnel</h3>
+          <p>Cette page a été pensée comme une présentation naturelle : je montre mon setup, mon ambiance et ce qui m’aide à me sentir bien en live, sans entrer dans un discours trop technique.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="signature">
+    <div class="container">Hope_0hana ou comment passer un bon moment chill et tryhard (enfin on essaie).</div>
+  </footer>
+
+  <script>
+    (() => {
+      const toggle = document.querySelector('[data-theme-toggle]');
+      const root = document.documentElement;
+      let current = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+      const renderIcon = (theme) => {
+        toggle.innerHTML = theme === 'dark'
+          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
+          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+        toggle.setAttribute('aria-label', theme === 'dark' ? 'Passer au mode clair' : 'Passer au mode sombre');
+      };
+
+      root.setAttribute('data-theme', current);
+      renderIcon(current);
+
+      toggle?.addEventListener('click', () => {
+        current = current === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', current);
+        renderIcon(current);
+      });
+    })();
+  </script>
+</body>
+</html>
